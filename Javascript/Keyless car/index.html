@@ -4,16 +4,37 @@
 		<meta charset="utf-8">
 				
 		<script >
-			var age = prompt("enter your age");
-			if (age == 18) {
-				alert("Congrats on your first year of driving! Drive safe.");
-			} else if (age < 18) {
-				alert("Sorry, you're too young to drive. Powering off");
-			}else if (age > 18) {
-				alert("Welcome, powering on. Enjoy your ride!");
-			} else {
-				alert ("You need to enter your age (a number!)");
+			var age;
+			function checkDriverAge(age) {
+				if (age == 18) {
+					return("Congrats on your first year of driving! Drive safe.");
+				} else if (age < 18) {
+					return("Sorry, you're too young to drive. Powering off");
+				}else if (age > 18) {
+					return("Welcome, powering on. Enjoy your ride!");
+				} else {
+					return ("You need to enter your age (a number!)");
+				}
+				return "Age check completed";
 			}
+
+			var checkDriverAge2 = function() {
+				var age = prompt("enter your age");
+				if (age == 18) {
+					return("Congrats on your first year of driving! Drive safe.");
+				} else if (age < 18) {
+					return("Sorry, you're too young to drive. Powering off");
+				}else if (age > 18) {
+					return("Welcome, powering on. Enjoy your ride!");
+				} else {
+					return ("You need to enter your age (a number!)");
+				}
+				return "Age check completed for checkDriverAge2";
+			}
+
+			checkDriverAge(80);
+			// checkDriverAge2();
+			
 		</script>
 	</head>
 	<body>

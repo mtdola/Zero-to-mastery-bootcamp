@@ -1,13 +1,13 @@
-TODO:
+<!-- TODO:
 -Create a basic todo list program usign array method just learnt from Andrei
 How it would work
 Takes in a todo by promting the user, saves the todo by pushing into the array(already created array ) 
 Saves into the array and displays.
 when user completes a task, it shifts or pops the item
 if box = checked (Remove item, for web view)
+ -->
 
-
-Facebook app
+<!-- Facebook app
 // Create an object and an array which we will use in our facebook exercise. 
 
 // 1. Create an object that has properties "username" and "password". Fill those values in with strings.
@@ -15,4 +15,47 @@ Facebook app
 
 // 2. Create an array which contains the object you have made above and name the array "database".
 
-// 3. Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline".
+// 3. Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline". -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miscelleneous</title>
+</head>
+<body>
+	<p>Welcome to my Misc file land</p>
+	<script>
+		var database = [{
+			username: "Mtd",
+			password: "ironman";
+		}]
+
+		var newsFeed = [
+		{
+			username: "Teez",
+			timeline: "I'm the GOAT";
+		},
+		{
+			username; "Amal",
+			timeline: "IronMan is my hero!!!";
+		}]
+
+		var userNamePromt = prompt("Enter your username");
+		var passwordPromt = prompt("Enter your password");
+		userNamePromt;
+		passwordPromt;
+
+		function signIn(user, pass) {
+			if (user == database[0].username && pass === database[0].password) {
+				alert("Welcome back, " + database[0].username + "!");
+				conole.log(newsFeed);
+			} else {
+				alert("Wrong username or password.")
+			}
+		}
+
+		signIn(userNamePromt, passwordPromt);
+
+	</script>
+</body>
+</html>

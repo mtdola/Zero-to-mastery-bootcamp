@@ -24,9 +24,11 @@
 		function signIn(user, pass) {
 			if (user === database[0].username && pass === database[0].password) {
 				alert("Welcome back, " + database[0].username + "!");
+				console.log("Here's your feed ");
 				console.log(newsFeed);
 			} else {
 				alert("Wrong username or password.");
+				console.log("Intruder!")
 			}
 		}
 

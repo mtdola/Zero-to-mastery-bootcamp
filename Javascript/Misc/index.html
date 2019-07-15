@@ -9,13 +9,16 @@
 		},
 		{
 			username: "Teez",
-			password: "Goat"
+			password: "goat"
 		},
 		{
 			username: "Xavier",
-			password: "Handsome"
+			password: "wendy"
 		},
-		{}];
+		{
+			username: "Amal",
+			password: "animae"
+		}];
 
 		var newsFeed = [
 		{
@@ -30,15 +33,24 @@
 		var userNamePrompt = prompt("Enter your username");
 		var passwordPrompt = prompt("Enter your password");
 
-		function signIn(user, pass) {
-			if (user === database[0].username && pass === database[0].password) {
-				alert("Welcome back, " + database[0].username + "!");
+
+		function isUserValid(user, pass) {
+			for (i=0; i < database.length; i++ ) {
+			if (user === database[i].username && pass === database[i].password) {
+				alert("Welcome back, " + database[i].username + "!");
 				console.log("Here's your feed ");
 				console.log(newsFeed);
-			} else {
+				return true;
+			} /*else {
 				alert("Wrong username or password.");
 				console.log("Intruder!")
-			}
+			}*/
+			return false; 
+		}
+		}
+
+		function signIn(user, pass) {
+			console.log(isUserValid(user, pass))
 		}
 
 		signIn(userNamePrompt, passwordPrompt);

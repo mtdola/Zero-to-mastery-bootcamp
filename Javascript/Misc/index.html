@@ -35,7 +35,7 @@
 
 
 		function isUserValid(user, pass) {
-			for (i=0; i < database.length; i++ ) {
+			for (var i=0; i < database.length; i++ ) {
 			if (user === database[i].username && pass === database[i].password) {
 				alert("Welcome back, " + database[i].username + "!");
 				console.log("Here's your feed ");
@@ -45,8 +45,8 @@
 				alert("Wrong username or password.");
 				console.log("Intruder!")
 			}*/
-			return false; 
 		}
+			return false; 
 		}
 
 		function signIn(user, pass) {

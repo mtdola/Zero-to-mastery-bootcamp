@@ -35,8 +35,12 @@
 
 
 		function isUserValid(user, pass) {
+			return false; 
+		}
+
+		function signIn(user, pass) {
 			for (var i=0; i < database.length; i++ ) {
-			if (user === database[i].username && pass === database[i].password) {
+			if (database[i].username === user && database[i].password === pass) {
 				alert("Welcome back, " + database[i].username + "!");
 				console.log("Here's your feed ");
 				console.log(newsFeed);
@@ -46,11 +50,9 @@
 				console.log("Intruder!")
 			}*/
 		}
-			return false; 
-		}
-
-		function signIn(user, pass) {
-			console.log(isUserValid(user, pass))
+			
+			
+			// console.log(isUserValid(user, pass))
 		}
 
 		signIn(userNamePrompt, passwordPrompt);

@@ -35,24 +35,20 @@
 
 
 		function isUserValid(user, pass) {
-			return false; 
-		}
-
-		function signIn(user, pass) {
 			for (var i=0; i < database.length; i++ ) {
 			if (database[i].username === user && database[i].password === pass) {
 				alert("Welcome back, " + database[i].username + "!");
 				console.log("Here's your feed ");
 				console.log(newsFeed);
 				return true;
-			} /*else {
-				alert("Wrong username or password.");
-				console.log("Intruder!")
-			}*/
+			} 
+		} 
+			alert("Intruder! Somebody call 911!!!");
+			return false; 
 		}
-			
-			
-			// console.log(isUserValid(user, pass))
+
+		function signIn(user, pass) {
+			console.log(isUserValid(user, pass));
 		}
 
 		signIn(userNamePrompt, passwordPrompt);

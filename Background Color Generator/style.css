@@ -1,4 +1,7 @@
 body {
 	margin: auto;
 	text-align: center;
+	background: linear-gradient(to right, cyan, purple);
+	color: white;
+	font-family: oswald;
 }
